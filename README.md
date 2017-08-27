@@ -3,7 +3,7 @@ xmrig-proxy for Monero AEON on docker
 
 # Basic example
 
-docker run --restart unless-stopped babim/xmrig-proxy -o pool.minemonero.pro:5555 -u YOUR_WALLET -p x --bind 0.0.0.0:3333 --bind 0.0.0.0:5555 
+`docker run --restart unless-stopped babim/xmrig-proxy -o pool.minemonero.pro:5555 -u YOUR_WALLET -p x --bind 0.0.0.0:3333 --bind 0.0.0.0:5555`
 
 # Failover
 
