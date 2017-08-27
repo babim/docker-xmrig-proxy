@@ -1,5 +1,5 @@
 # docker-xmrig-proxy
-xmrig-proxy for Monero AEON on docker
+xmrig-proxy https://github.com/xmrig/xmrig-proxy for Monero AEON on docker
 
 # Basic example
 
