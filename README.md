@@ -1,5 +1,5 @@
 # docker-xmrig-proxy
-xmrig-proxy for Monero AEON on docker
+can't found uuid-dev (if you can fix, please create issue or email to me. Thanks)
 
 # Basic example
 
