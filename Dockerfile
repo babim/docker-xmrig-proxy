@@ -6,4 +6,4 @@ RUN   git clone https://github.com/xmrig/xmrig-proxy.git && mv xmrig-proxy xmrig
       make && mv xmrig-proxy / && cd ../../ && rm -rf xmrig-proxy-dev
 RUN   apt-get purge -y git build-essential cmake && rm -rf /var/lib/apt/lists/**
 WORKDIR    /
-ENTRYPOINT ["./xmrig-proxy"]
+ENTRYPOINT ["./xmrig-proxy", "--donate-level=1"]
