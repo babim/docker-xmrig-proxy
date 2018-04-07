@@ -5,10 +5,10 @@ RUN   apk --no-cache upgrade && \
         git \
         cmake \
         libuv-dev \
-        build-base libuuid && \
+        build-base libuuid libmicrohttpd-dev && \
       git clone https://github.com/xmrig/xmrig-proxy.git && mv xmrig-proxy xmrig-proxy-dev && \
       cd xmrig-proxy-dev && mkdir build && cd build && \
-      cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a -DWITH_HTTPD=OFF && \
+      cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a && \
       make && mv xmrig-proxy / && cd ../../ && rm -rf xmrig-proxy-dev && \
       apk del build-base cmake git
 USER miner
