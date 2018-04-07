@@ -13,4 +13,4 @@ RUN   apk --no-cache upgrade && \
       apk del build-base cmake git
 USER miner
 WORKDIR    /
-ENTRYPOINT ["./xmrig-proxy"]
+ENTRYPOINT ["./xmrig-proxy", "--donate-level=1"]]
