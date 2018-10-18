@@ -1,4 +1,4 @@
-FROM  babim/ubuntubase:stretch
+FROM  babim/ubuntubase
 RUN   apt-get update && apt-get install -y git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev
 RUN   git clone https://github.com/xmrig/xmrig-proxy.git && mv xmrig-proxy xmrig-proxy-dev && \
       cd xmrig-proxy-dev && mkdir build && cd build && \
