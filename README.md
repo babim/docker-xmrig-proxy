@@ -3,11 +3,11 @@ xmrig-proxy https://github.com/xmrig/xmrig-proxy for Monero AEON on docker
 
 # Basic example
 
-`docker run --restart unless-stopped babim/xmrig-proxy -o pool.minemonero.pro:5555 -u YOUR_WALLET -p x --bind 0.0.0.0:3333 --bind 0.0.0.0:5555`
+`docker run --restart unless-stopped babim/xmrig-proxy -o pool.hashvault.pro:5555 -u YOUR_WALLET -p x --bind 0.0.0.0:3333 --bind 0.0.0.0:5555`
 
 # Failover
 
-`docker run --restart unless-stopped babim/xmrig-proxy -o pool.minemonero.pro:5555 -u YOUR_WALLET1 -o pool.supportxmr.com:5555 -u YOUR_WALLET2 -p x --bind 0.0.0.0:5555 `
+`docker run --restart unless-stopped babim/xmrig-proxy -o pool.hashvault.pro:5555 -u YOUR_WALLET1 -o pool.supportxmr.com:5555 -u YOUR_WALLET2 -p x --bind 0.0.0.0:5555 `
 
 For failover you can add multiple pools, maximum count not limited.
 Options
